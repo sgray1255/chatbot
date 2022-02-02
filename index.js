@@ -6,7 +6,7 @@ const input = document.querySelector('.input');
 const username = "local-user";
 
 const brain = [
-  'https://raw.githubusercontent.com/sgray1255/rstut1/main/brain.rive'
+  './brain.rive'
 ];
 
 bot.loadFile(brain).then(loading_done).catch(loading_error);
