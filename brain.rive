@@ -1,0 +1,44 @@
+! version = 2.0
+
+var bot name = Chatty the Bot
+
++ hello
+- Hello, what is your name?
+
++ hi
+@ hello
+
++ my name is *
+- <set name=<formal>> Nice to meet you <get name>! You can call 
+^ me <bot name>. 
+^ Welcome to my humble, digital abode!
+- Nice meeting you <star>. I am <bot name>.
+^ Welcome to my humble, digital abode!
+
++ thank you
+- Why, you're welcome 
+- no worries
+
++ what is my name 
+* <get name> == undefined => You never told me!
+- Your name is <get name>, silly!
+- Aren't you <get name>?
+
++ what are you
+- I am an artificial intelligence programmed\s
+^ using RiveScript.
+
++ knock knock 
+- Who's there?
+
++ * 
+% who is there 
+- <star> who?
+
++ *
+% * who
+- Ha! <star>! That's pretty funny!
+
++ *
+- Sorry, I didn't catch that. 
+- I don't get it.
